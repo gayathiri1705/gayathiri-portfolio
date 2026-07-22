@@ -170,13 +170,15 @@ document.addEventListener("keydown",(e)=>{
 });
 /*================ MOBILE MENU ================*/
 
+/*================ MOBILE MENU ================*/
+
 const menuToggle = document.querySelector(".menu-toggle");
 const navMenu = document.querySelector(".nav-links");
 const menuIcon = document.querySelector(".menu-toggle i");
 
 menuToggle.addEventListener("click", () => {
 
-    navLinks.classList.toggle("active");
+    navMenu.classList.toggle("active");
 
     menuIcon.classList.toggle("fa-bars");
     menuIcon.classList.toggle("fa-times");
@@ -187,7 +189,7 @@ document.querySelectorAll(".nav-links a").forEach(link => {
 
     link.addEventListener("click", () => {
 
-        navLinks.classList.remove("active");
+        navMenu.classList.remove("active");
 
         menuIcon.classList.remove("fa-times");
         menuIcon.classList.add("fa-bars");
