@@ -171,29 +171,25 @@ document.addEventListener("keydown",(e)=>{
 /*================ MOBILE MENU ================*/
 
 const menuToggle = document.querySelector(".menu-toggle");
-
-const mobileMenu = document.querySelector(".mobile-menu");
-
+const navMenu = document.querySelector(".nav-links");
 const menuIcon = document.querySelector(".menu-toggle i");
 
-menuToggle.addEventListener("click",()=>{
+menuToggle.addEventListener("click", () => {
 
-    mobileMenu.classList.toggle("active");
+    navLinks.classList.toggle("active");
 
     menuIcon.classList.toggle("fa-bars");
-
     menuIcon.classList.toggle("fa-times");
 
 });
 
-document.querySelectorAll(".nav-links a").forEach(link=>{
+document.querySelectorAll(".nav-links a").forEach(link => {
 
-    link.addEventListener("click",()=>{
+    link.addEventListener("click", () => {
 
-        mobileMenu.classList.remove("active");
+        navLinks.classList.remove("active");
 
         menuIcon.classList.remove("fa-times");
-
         menuIcon.classList.add("fa-bars");
 
     });
